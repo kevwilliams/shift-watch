@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>A tool to make it easier for people to make it easer for people to connect with each other and the places they care about.</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700italic' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">
+	<link href='app.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<fieldset class="shadow">
+	<legend><i class="fa fa-user"></i>Add a Customer</legend>
+	<label for="customer">Add </label>
+	<select name="customer" id="customerSelect">
+		<option>- Choose a Name -</option>
+		<option value="Arthur">Arthur</option>
+		<option value="Bob">Bob</option>
+		<option value="Chuck">Chuck</option>
+		<option value="Dan">Dan</option>
+		<option value="Erin">Erin</option>
+		<option value="Frank">Frank</option>
+		<option value="J. Random Hacker">J. Random Hacker</option>
+		<option value="Merlin">Merlin</option>
+		<option value="Oscar">Oscar</option>
+		<option value="Peggy">Peggy</option>
+		<option value="Sybil">Sybil</option>
+		<option value="Trent">Trent</option>
+		<option value="Walter">Walter</option>
+		<option value="Wendy">Wendy</option>
+	</select>
+	<label for="customer">from</label>
+	<select name="region" id="regionSelect">
+		<option>- Region -</option>
+		<option value="89121">89121</option>
+		<option value="89122">89122</option>
+		<option value="89123">89123</option>
+		<option value="89124">89124</option>
+		<option value="89125" selected="selected">89125</option>
+		<option value="89126">89126</option>
+	</select>
+	<input type="button" value="Add" id="addButton"/>
+</fieldset>
+<div class="board shadow">
+	<div class="column green flex" id="green">
+		<div class="column-label"><i class="fa fa-thumbs-o-up"></i></div>
+		<ul id="greenList"></ul>
+	</div>
+	<div class="column yellow flex">
+		<div class="column-label"><i class="fa fa-smile-o"></i></div>
+		<ul id="yellowList"></ul>
+	</div>
+	<div class="column orange flex">
+		<div class="column-label shifted"><i class="fa fa-meh-o"></i></div>
+		<ul id="orangeList"></ul>
+	</div>
+	<div class="column red flex">
+		<div class="column-label"><i class="fa fa-frown-o"></i></div>
+		<ul id="redList"></ul>
+	</div>
+	<div class="column silver">
+		<p class="details-text"><small>Click to select a Tile see more details about a Customer!</small>
+		<div id="tileDetails"></div>
+		<hr/>
+		<div class="details-buttons">
+			<h1><a href="#" class="btn hidden" id="removeButton"><i class="fa fa-minus-square-o"></i>Remove</a><br/>
+			</h1>
+		</div>
+		</p>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
