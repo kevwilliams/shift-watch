@@ -1,6 +1,8 @@
 shift-watch
 ===========
 
+[![Click to Watch the Promo](http://img.youtube.com/vi/TkZUEvHKgTo/0.jpg)](http://www.youtube.com/watch?v=TkZUEvHKgTo)
+
 An interactive leaderboard of a realtime MongoDB collection in Node with Express.
 
 
